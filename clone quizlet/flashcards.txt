@@ -1,3 +1,4 @@
-Name: John Doe
-Age: 30
-Country: USAssssssssssssssssssssss
+apple|quả táo
+cat|con mèo
+dog|con chó
+book|quyển sách
