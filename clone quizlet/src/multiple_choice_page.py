@@ -18,16 +18,23 @@ class MultipleChoiceApp:
             text="Tiếp", on_click=self.next_question, visible=False
         )
 
-        self.layout = ft.Column(
-            [
-                self.question_text,
-                *self.buttons,
-                self.feedback,
-                self.next_button,
-            ],
-            alignment=ft.MainAxisAlignment.CENTER,
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            spacing=20,
-        )
-
+        self.layout = ft.Column([
+            self.question_text,
+            *self.buttons,
+            self.feedback,
+            self.next_button,
+            ft.ElevatedButton(text="Tiếp", on_click=self.next_question, visible=False)
+        ])
         self.load_question()
+
+    def load_question(self):
+        # Xử lý hiển thị câu hỏi mới ở đây
+        pass
+
+    def check_answer(self, e):
+        # Xử lý kiểm tra đáp án ở đây
+        pass
+
+    def next_question(self, e):
+        # Xử lý chuyển sang câu hỏi tiếp theo ở đây
+        pass

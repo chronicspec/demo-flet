@@ -1,5 +1,5 @@
 # Titles
-APP_TITLE = "Quizlet Clone App"
+APP_TITLE = "Quizlet Clone"
 MULTIPLE_CHOICE_TITLE = "🎯 Trắc nghiệm Flashcard"
 
 # Buttons
