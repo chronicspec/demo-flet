@@ -6,14 +6,14 @@ def app_header(title=None, show_back=False, on_back=None):
         ft.Row(
             [
                 ft.IconButton(
-                    icon=ft.Icons.ARROW_BACK,  # Sửa icons -> Icons
+                    icon=ft.Icons.ARROW_BACK,
                     on_click=on_back
                 ) if show_back else ft.Container(width=40),
-                ft.Text(title or constant.APP_TITLE, size=20, weight="bold"),
+                ft.Text(title or constant.HEADER_TEXT, size=20, weight=ft.FontWeight.BOLD),
             ],
             alignment=ft.MainAxisAlignment.START,
             vertical_alignment=ft.CrossAxisAlignment.CENTER,
         ),
-        bgcolor=ft.Colors.BLUE_100,  # Sửa colors -> Colors nếu chưa sửa
+        bgcolor=ft.Colors.BLUE_100,
         padding=10,
     )

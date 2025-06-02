@@ -1,4 +1,5 @@
 import flet as ft
+import constant
 
 class FlashcardPage:
     def __init__(self, flashcards):
@@ -7,7 +8,7 @@ class FlashcardPage:
 
         self.term = ft.Text(size=30, weight=ft.FontWeight.BOLD)
         self.definition = ft.Text(size=24)
-        self.next_btn = ft.ElevatedButton(text="Tiếp", on_click=self.next_card)
+        self.next_btn = ft.ElevatedButton(text=constant.MC_NEXT, on_click=self.next_card)
 
         self.layout = ft.Column(
             [
